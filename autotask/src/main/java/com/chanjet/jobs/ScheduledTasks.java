@@ -21,76 +21,76 @@ public class ScheduledTasks {
 
     private static final Logger log = LoggerFactory.getLogger(ScheduledTasks.class);
 
-//    @Autowired
-//    private FeeSplitForEposService feeSplitForEposService;
-//    @Autowired
-//    private FeeSplitForEposHisService feeSplitForEposHisService;
-//    @Autowired
-//    private FeeSplitForQrcodeService feeSplitForQrcodeService;
-//    @Autowired
-//    private FeeSplitForQrcodeHisService feeSplitForQrcodeHisService;
-//    @Autowired
-//    private FeeSplitForD0Service feeSplitForD0Service;
-//    @Autowired
-//    private QrcodeAutoQuery qrcodeAutoQuery;
-//    @Autowired
-//    private QrcodeAutoQueryTimeoutPro qrcodeAutoQueryTimeoutPro;
-//    @Autowired
-//    private EposAutoQuery eposAutoQuery;
-//    @Autowired
-//    private EposAutoQueryTimeoutPro eposAutoQueryTimeoutPro;
-//    @Autowired
-//    private FeeSplitForPosService feeSplitForPosService;
-//    @Autowired
-//    private FeeSplitForPosService feeSplitForPosHisService;
+    @Autowired
+    private FeeSplitForEposService feeSplitForEposService;
+    @Autowired
+    private FeeSplitForEposHisService feeSplitForEposHisService;
+    @Autowired
+    private FeeSplitForQrcodeService feeSplitForQrcodeService;
+    @Autowired
+    private FeeSplitForQrcodeHisService feeSplitForQrcodeHisService;
+    @Autowired
+    private FeeSplitForD0Service feeSplitForD0Service;
+    @Autowired
+    private QrcodeAutoQuery qrcodeAutoQuery;
+    @Autowired
+    private QrcodeAutoQueryTimeoutPro qrcodeAutoQueryTimeoutPro;
+    @Autowired
+    private EposAutoQuery eposAutoQuery;
+    @Autowired
+    private EposAutoQueryTimeoutPro eposAutoQueryTimeoutPro;
+    @Autowired
+    private FeeSplitForPosService feeSplitForPosService;
+    @Autowired
+    private FeeSplitForPosService feeSplitForPosHisService;
     @Autowired
     private CheckCupsQrCodeService checkCupsQrCodeService;
-//    @Scheduled(fixedRate = 30000)
-//    public void feeSplitForEpos() throws Exception {
-//        feeSplitForEposService.feeSplitting(ROWNUM);
-//    }
-//    @Scheduled(fixedRate = 300000)
-//    public void feeSplitForEposHis() throws Exception {
-//        feeSplitForEposHisService.feeSplitting(ROWNUM);
-//    }
-//    @Scheduled(fixedRate = 30000)
-//    public void feeSplitForQrcode() throws Exception {
-//        feeSplitForQrcodeService.feeSplitting(ROWNUM);
-//    }
-//    @Scheduled(fixedRate = 300000)
-//    public void feeSplitForQrcodeHis() throws Exception {
-//        feeSplitForQrcodeHisService.feeSplitting(ROWNUM);
-//    }
-//    @Scheduled(fixedRate = 30000)
-//    public void feeSplitForD0() throws Exception {
-//        feeSplitForD0Service.feeSplitting(ROWNUM);
-//    }
-//    @Scheduled(fixedRate = 5000)
-//    public void qrcodeAutoQuery() throws Exception {
-//        qrcodeAutoQuery.doPost();
-//    }
-//    @Scheduled(fixedRate = 5000)
-//    public void qrcodeAutoQueryTimeoutPro() throws Exception {
-//        qrcodeAutoQueryTimeoutPro.getRet();
-//    }
-//    @Scheduled(fixedRate = 5000)
-//    public void eposAutoQuery() throws Exception {
-//        eposAutoQuery.doPost();
-//    }
-//    @Scheduled(fixedRate = 5000)
-//    public void eposAutoQueryRspTimeoutPro() throws Exception {
-//        eposAutoQueryTimeoutPro.getRet();
-//    }
-//
-//    @Scheduled(fixedRate = 30000)
-//    public void feeSplitForPos() throws Exception {
-//        feeSplitForPosService.feeSplitting(POSROWNUM);
-//    }
-//
-//    @Scheduled(fixedRate = 300000)
-//    public void feeSplitForPosHis() throws Exception {
-//        feeSplitForPosHisService.feeSplitting(POSROWNUM);
-//    }
+    @Scheduled(fixedRate = 30000)
+    public void feeSplitForEpos() throws Exception {
+        feeSplitForEposService.feeSplitting(ROWNUM);
+    }
+    @Scheduled(fixedRate = 300000)
+    public void feeSplitForEposHis() throws Exception {
+        feeSplitForEposHisService.feeSplitting(ROWNUM);
+    }
+    @Scheduled(fixedRate = 30000)
+    public void feeSplitForQrcode() throws Exception {
+        feeSplitForQrcodeService.feeSplitting(ROWNUM);
+    }
+    @Scheduled(fixedRate = 300000)
+    public void feeSplitForQrcodeHis() throws Exception {
+        feeSplitForQrcodeHisService.feeSplitting(ROWNUM);
+    }
+    @Scheduled(fixedRate = 30000)
+    public void feeSplitForD0() throws Exception {
+        feeSplitForD0Service.feeSplitting(ROWNUM);
+    }
+    @Scheduled(fixedRate = 5000)
+    public void qrcodeAutoQuery() throws Exception {
+        qrcodeAutoQuery.doPost();
+    }
+    @Scheduled(fixedRate = 5000)
+    public void qrcodeAutoQueryTimeoutPro() throws Exception {
+        qrcodeAutoQueryTimeoutPro.getRet();
+    }
+    @Scheduled(fixedRate = 5000)
+    public void eposAutoQuery() throws Exception {
+        eposAutoQuery.doPost();
+    }
+    @Scheduled(fixedRate = 5000)
+    public void eposAutoQueryRspTimeoutPro() throws Exception {
+        eposAutoQueryTimeoutPro.getRet();
+    }
+
+    @Scheduled(fixedRate = 30000)
+    public void feeSplitForPos() throws Exception {
+        feeSplitForPosService.feeSplitting(POSROWNUM);
+    }
+
+    @Scheduled(fixedRate = 300000)
+    public void feeSplitForPosHis() throws Exception {
+        feeSplitForPosHisService.feeSplitting(POSROWNUM);
+    }
 
     @Scheduled(cron = "0 0 11 * * ?")
     //@Scheduled(fixedRate = 30000)
