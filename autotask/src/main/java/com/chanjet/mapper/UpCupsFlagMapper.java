@@ -10,4 +10,5 @@ public interface UpCupsFlagMapper {
             " on (c.sys_trace=h.settle_trace_no and c.transmit_time=h.transmit_time) " +
             " when matched then  update set c.CHK_FLAG='Y' where  c.chk_flag='N'")
     public int updCpusFlag();
+
 }

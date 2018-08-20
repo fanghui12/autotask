@@ -9,4 +9,5 @@ public interface UpTransFlagMapper {
             " using B_CUPS_TRANS_DETAIL c on (c.sys_trace=h.settle_trace_no and c.CHK_FLAG='N' and c.transmit_time=h.transmit_time) " +
             " when matched then  update set h.CHECK_FLAG='Y',h.channel_fee=c.fee")
     public int updTransFlag();
+
 }
